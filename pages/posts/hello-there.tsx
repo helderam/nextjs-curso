@@ -9,7 +9,7 @@ const Hello = () =>(
         <meta property="og:title" content="Olá" />
     </Head>
     <article>
-        <h1> OLA TUDO BEM ?</h1>
+        <h1> Olá tudo bem ?</h1>
         <Image
         src="/posts/hello-there/opencart.jpeg"
         width={640}

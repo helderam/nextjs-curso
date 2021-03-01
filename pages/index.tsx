@@ -21,7 +21,10 @@ function Home({ posts }: InferGetServerSidePropsType<typeof getStaticProps>) {
 
       <main>
         <Navigation />
+
         <Header />
+
+        {/* Mostra os posts */}
         {posts.length > 0 && (
           <ul>
             {posts.map((slug) => (
