@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 type PostList = string[];
 
-function Home({ posts }: InferGetServerSidePropsType<typeof getStaticPropos>) {
+function Home({ posts }: InferGetServerSidePropsType<typeof getStaticProps>) {
   return (
     <>
 
@@ -26,7 +26,7 @@ function Home({ posts }: InferGetServerSidePropsType<typeof getStaticPropos>) {
           <ul>
             {posts.map((slug) => (
               <li key={slug}>
-                <Link href={`post/${slug}`}>
+                <Link href={`posts/${slug}`}>
                   <a>
                     {slug.replace(/-/g, ' ')}
                   </a>
@@ -41,8 +41,8 @@ function Home({ posts }: InferGetServerSidePropsType<typeof getStaticPropos>) {
   );
 }
 
-export const getStaticPropos = async () => {
-  const posts: PostList =getPostList()
+export const getStaticProps = async () => {
+  const posts: PostList = getPostList()
   return {
     props: {
       posts

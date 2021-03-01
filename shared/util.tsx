@@ -3,7 +3,7 @@ import path from 'path';
 
 export function getPostList() {
     try {
-        const postsDir = path.join(process.cwd(), 'pages/post');
+        const postsDir = path.join(process.cwd(), 'pages/posts');
 
         return fs
             .readdirSync(postsDir)

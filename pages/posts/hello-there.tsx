@@ -11,7 +11,7 @@ const Hello = () =>(
     <article>
         <h1> OLA TUDO BEM ?</h1>
         <Image
-        src="/posts/hello-there/img.jpg"
+        src="/posts/hello-there/opencart.jpeg"
         width={640}
         height={427}
         />
